@@ -20,7 +20,14 @@ namespace car_inventory_backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IVehicleRepository, VehicleRepository>();
+            services.AddSingleton<IInventoryRepository, InventoryRepository>();
+            services.AddSingleton<IFeatureRepository, FeatureRepository>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

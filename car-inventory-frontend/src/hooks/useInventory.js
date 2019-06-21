@@ -17,10 +17,12 @@ export function useInventory() {
             .then((results) => results.json())
             .then((data) => {
                 const mappedInventory = JSON.parse(data).map((item) => ({
-                    type: item.VehicleType,
                     make: item.Make,
                     model: item.Model,
-                    retailPrice: item.RetailPrice,
+                    year: item.Year,
+                    type: item.VehicleType,
+                    features: item.Features,
+                    calculatedSalesPrice: item.CalculatedSalesPrice
                 }));
 
                 setInventory(mappedInventory);

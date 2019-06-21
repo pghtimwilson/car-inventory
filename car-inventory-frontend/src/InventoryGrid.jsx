@@ -6,10 +6,12 @@ export default function InventoryGrid() {
     const inventory = useInventory();
 
     const columns = [
-        { key: 'type', name:'Vehicle Type'},
         { key: 'make', name: 'Make'},
         { key: 'model', name: 'Model'},
-        { key: 'retailPrice', name: 'Retail Price'},
+        { key: 'year', name: 'Year' },
+        { key: 'type', name: 'Vehicle Type'},
+        { key: 'features', name: 'Features'},
+        { key: 'calculatedSalesPrice', name: 'Calculated Sales Price'},
     ];
 
     return (
