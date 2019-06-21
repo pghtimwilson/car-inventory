@@ -1,0 +1,14 @@
+C:\Code\CarDealership\car-dealership-backend\bin\Debug\netcoreapp2.1\car-dealership-backend.deps.json
+C:\Code\CarDealership\car-dealership-backend\bin\Debug\netcoreapp2.1\car-dealership-backend.runtimeconfig.json
+C:\Code\CarDealership\car-dealership-backend\bin\Debug\netcoreapp2.1\car-dealership-backend.runtimeconfig.dev.json
+C:\Code\CarDealership\car-dealership-backend\bin\Debug\netcoreapp2.1\car-dealership-backend.dll
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.csprojAssemblyReference.cache
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.csproj.CoreCompileInputs.cache
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.RazorAssemblyInfo.cache
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.RazorAssemblyInfo.cs
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.AssemblyInfoInputs.cache
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.AssemblyInfo.cs
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.RazorTargetAssemblyInfo.cache
+C:\Code\CarDealership\car-dealership-backend\bin\Debug\netcoreapp2.1\car-dealership-backend.pdb
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.dll
+C:\Code\CarDealership\car-dealership-backend\obj\Debug\netcoreapp2.1\car-dealership-backend.pdb
