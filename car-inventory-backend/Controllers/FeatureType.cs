@@ -2,6 +2,9 @@
 {
     public enum FeatureType
     {
-        
+        Doors,
+        Fuel,
+        Transmission,
+        Interior
     }
 }

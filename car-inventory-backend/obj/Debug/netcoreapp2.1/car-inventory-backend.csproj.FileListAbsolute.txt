@@ -11,3 +11,4 @@ C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventor
 C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.RazorTargetAssemblyInfo.cache
 C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.dll
 C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.pdb
+C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.csprojAssemblyReference.cache

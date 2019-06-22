@@ -8,7 +8,6 @@ namespace car_inventory_backend.Data
         List<InventoryItem> Generate(int seedCount = 10);
     }
 
-
     public class InventoryGenerator : IInventoryGenerator
     {
         private Random randomValue;
@@ -48,12 +47,11 @@ namespace car_inventory_backend.Data
             var item = new InventoryItem();
             item.Vehicle = randomVehicle;
 
-            //TODO this should be refactored, this is also wrong but a placeholder for now as we need random options as well.
-            //var featureCount = FeatureRepository.List.Count;
-            //var featureRandomIndex = this.randomValue.Next(0, featureCount - 1);
-            //var randomFeature = FeatureRepository.List[featureCount];
+            var featureCount = FeatureRepository.List.Count;
+            var featureRandomIndex = this.randomValue.Next(0, featureCount - 1);
+            var randomFeature = FeatureRepository.List[featureCount];
 
-            //item.Features.Add(randomFeature);
+            item.Features.Add(randomFeature);
 
             //Provide a random markup between 0 and 20 percent.
             item.Markup = this.randomValue.Next(0, 20);
