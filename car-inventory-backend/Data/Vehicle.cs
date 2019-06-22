@@ -2,6 +2,17 @@
 {
     public class Vehicle
     {
+        public Vehicle()
+        {
+
+        }
+
+        public Vehicle(Make make, string model)
+        {
+            Make = make;
+            Model = model;
+        }
+
         public Make Make { get; set; }
 
         public string Model { get; set; }

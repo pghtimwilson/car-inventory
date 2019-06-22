@@ -19,6 +19,7 @@ namespace car_inventory_backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IInventoryGenerator, InventoryGenerator>();
             services.AddSingleton<IVehicleRepository, VehicleRepository>();
             services.AddSingleton<IInventoryRepository, InventoryRepository>();
             services.AddSingleton<IFeatureRepository, FeatureRepository>();
