@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -28,19 +30,19 @@ namespace car_inventory_backend.Data
         {
             var inventory = InventoryRepository.List;
 
-            //TODO - This is messy with left-right mappings, replace with AutoMapper.
             var inventoryDtos = new List<InventoryItemDto>();
             foreach(var item in inventory){
-                inventoryDtos.Add(new InventoryItemDto{
+                // This is fairly annoying (the left/right mapping) AutoMapper is great for things like this.
+                // I like AutoMapper because it is configurable, testable and it helps clean up code substantially IMO.
+                inventoryDtos.Add(new InventoryItemDto {
                     Make = item.Vehicle.Make.ToString("g"),
                     Model = item.Vehicle.Model,
                     Year = "2020",
                     VehicleType = item.Vehicle.VehicleType.ToString("g"),
                     Markup = item.Markup,
                     RetailPrice = item.Vehicle.RetailPrice,
-                    
-                    //TODO: This needs to take into account the Features retail price as well.
-                    CalculatedSalesPrice = item.Vehicle.RetailPrice + (item.Vehicle.RetailPrice * (item.Markup/100))
+                    Features = String.Join(",", item.Features.Select(f => Enum.GetName(typeof(FeatureType), f.Type) + " " + f.Description).ToList()),
+                    CalculatedSalesPrice = item.Vehicle.RetailPrice + (item.Vehicle.RetailPrice * (item.Markup/100)) + item.Features.Select(f => f.RetailPrice).Sum()
                 });
             }
 
