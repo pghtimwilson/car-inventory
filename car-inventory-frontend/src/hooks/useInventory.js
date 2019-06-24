@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function useInventory() {
+export function useInventory(notifier) {
     const [inventory, setInventory] = React.useState([]);
 
     React.useEffect(() => {
@@ -22,12 +22,15 @@ export function useInventory() {
                     year: item.Year,
                     type: item.VehicleType,
                     features: item.Features,
-                    calculatedSalesPrice: item.CalculatedSalesPrice
+                    retailPrice: item.RetailPrice,
+                    markup: item.Markup,
+                    calculatedSalesPrice: item.CalculatedSalesPrice,
+                    formattedCalculatedSalesPrice: item.CalculatedSalesPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
                 }));
 
                 setInventory(mappedInventory);
             });
-    }, []);
+    }, [notifier]);
 
     return inventory;
 }
