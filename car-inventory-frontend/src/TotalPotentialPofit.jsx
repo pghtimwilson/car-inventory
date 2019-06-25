@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useInventory } from './hooks/useInventory';
 
-export default function TotalPotentialProfit() {
-    var inventory = useInventory(false);
+export default function TotalPotentialProfit(props) {
+    var inventory = useInventory(props.notifier);
 
     var total = 0;
     if(inventory && inventory.length > 0)

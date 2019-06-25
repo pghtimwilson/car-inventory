@@ -1,10 +1,11 @@
 
 using System.Collections.Generic;
-using car_inventory_backend.Data;
 
 namespace car_inventory_backend.Data
 {
     public class InventoryItem {
+
+        public string Id { get; set; }
 
         public InventoryItem(){
             Features = new List<Feature>();

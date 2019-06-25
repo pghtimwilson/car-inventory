@@ -1,6 +1,8 @@
 namespace car_inventory_backend.Data
 {
     public class InventoryItemDto {
+        public string Id { get; set; }
+
         public string Make {get;set;}
 
         public string Model {get;set;}
@@ -10,6 +12,7 @@ namespace car_inventory_backend.Data
         public string VehicleType {get;set;}
 
         public string Features {get;set;}
+
         public double CalculatedSalesPrice {get;set;}
 
         public double Markup {get;set;}

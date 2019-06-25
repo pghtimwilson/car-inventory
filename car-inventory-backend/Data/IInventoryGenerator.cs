@@ -28,28 +28,29 @@ namespace car_inventory_backend.Data
             var inventory = new List<InventoryItem>();
 
             //Building sample inventory list.
-            var x = seedCount;
-            while (x > 0)
+            var x = 1;
+            while (x <= seedCount)
             {
-                inventory.Add(RandomlyGenerate());
-                x--;
+                inventory.Add(RandomlyGenerate(x));
+                x++;
             }
 
             return inventory;
         }
 
-        private InventoryItem RandomlyGenerate()
+        private InventoryItem RandomlyGenerate(int x)
         {
             var vehicleCount = VehicleRepository.List.Count;
-            var randomIndex = this.randomValue.Next(0, vehicleCount - 1);
+            var vehicleRandomIndex = this.randomValue.Next(0, vehicleCount - 1);
 
-            var randomVehicle = VehicleRepository.List[randomIndex];
+            var randomVehicle = VehicleRepository.List[vehicleRandomIndex];
             var item = new InventoryItem();
+            item.Id = x.ToString(); 
             item.Vehicle = randomVehicle;
 
             var featureCount = FeatureRepository.List.Count;
             var featureRandomIndex = this.randomValue.Next(0, featureCount - 1);
-            var randomFeature = FeatureRepository.List[featureCount];
+            var randomFeature = FeatureRepository.List[featureRandomIndex];
 
             item.Features.Add(randomFeature);
 

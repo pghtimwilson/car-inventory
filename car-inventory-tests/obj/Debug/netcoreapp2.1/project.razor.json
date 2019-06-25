@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Code\\car-inventory\\car-inventory-tests\\car-inventory-tests.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

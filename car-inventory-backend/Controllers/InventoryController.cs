@@ -35,6 +35,7 @@ namespace car_inventory_backend.Data
                 // This is fairly annoying (the left/right mapping) AutoMapper is great for things like this.
                 // I like AutoMapper because it is configurable, testable and it helps clean up code substantially IMO.
                 inventoryDtos.Add(new InventoryItemDto {
+                    Id = item.Id,
                     Make = item.Vehicle.Make.ToString("g"),
                     Model = item.Vehicle.Model,
                     Year = "2020",
@@ -48,6 +49,15 @@ namespace car_inventory_backend.Data
 
             return Ok(JsonConvert.SerializeObject(inventoryDtos));
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(string id)
+        {
+            InventoryRepository.Delete(id);
+
+            return Ok();
+        }
+
 
         //TODO - Add Post, business logic must be enforced server side as well.
         //TODO - Add server side validation

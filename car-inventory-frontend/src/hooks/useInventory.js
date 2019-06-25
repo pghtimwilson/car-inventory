@@ -17,6 +17,7 @@ export function useInventory(notifier) {
             .then((results) => results.json())
             .then((data) => {
                 const mappedInventory = JSON.parse(data).map((item) => ({
+                    id: item.Id,
                     make: item.Make,
                     model: item.Model,
                     year: item.Year,
