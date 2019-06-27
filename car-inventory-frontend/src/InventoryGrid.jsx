@@ -2,8 +2,10 @@ import "./App.css";
 import * as React from 'react';
 import ReactDataGrid from 'react-data-grid';
 import { useInventory } from './hooks/useInventory';
+import InventoryForm from './InventoryForm';
 import TotalSellingPrice from './TotalSellingPrice';
 import TotalPotentialProfit from './TotalPotentialPofit';
+
 
 export default function InventoryGrid() {
     const [notifier, setNotifier] = React.useState(false);
@@ -61,6 +63,7 @@ export default function InventoryGrid() {
 
     return (
         <div>
+            <InventoryForm></InventoryForm>
             <TotalPotentialProfit notifier={notifier} />
             <TotalSellingPrice notifier={notifier} />
             <br/>

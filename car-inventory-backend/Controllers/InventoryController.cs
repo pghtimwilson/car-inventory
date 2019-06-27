@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using car_inventory_backend.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -13,15 +14,14 @@ namespace car_inventory_backend.Data
     public class InventoryController : ControllerBase
     {
         private IInventoryRepository InventoryRepository;
-        private IVehicleRepository VehicleRepository;
 
-        private IFeatureRepository FeatureRepository;
+        private IStockNumberGenerator StockNumberGenerator;
 
-        public InventoryController(IInventoryRepository inventoryRepository, IVehicleRepository vehicleRepository, IFeatureRepository featureRepository)
+        public InventoryController(IInventoryRepository inventoryRepository, IStockNumberGenerator stockNumberGenerator)
         {
             InventoryRepository = inventoryRepository;
-            VehicleRepository = vehicleRepository;
-            FeatureRepository = featureRepository;
+
+            StockNumberGenerator = stockNumberGenerator;
         }
 
         // GET api/inventory
@@ -55,6 +55,13 @@ namespace car_inventory_backend.Data
         {
             InventoryRepository.Delete(id);
 
+            return Ok();
+        }
+
+        [HttpPost]
+        public IActionResult Post(){
+            //Assign unique stock number...
+            
             return Ok();
         }
 
