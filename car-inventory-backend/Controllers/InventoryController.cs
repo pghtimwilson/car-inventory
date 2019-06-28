@@ -20,7 +20,6 @@ namespace car_inventory_backend.Data
         public InventoryController(IInventoryRepository inventoryRepository, IStockNumberGenerator stockNumberGenerator)
         {
             InventoryRepository = inventoryRepository;
-
             StockNumberGenerator = stockNumberGenerator;
         }
 
@@ -59,14 +58,30 @@ namespace car_inventory_backend.Data
         }
 
         [HttpPost]
-        public IActionResult Post(){
-            //Assign unique stock number...
+        public IActionResult Post(InventoryItemDto item){
+            //Quantity in stock
             
+            //It isn't enough to only do validation client side, for data integrity it must be done server side as well.
+            //TODO - Add Post, business logic must be enforced server side as well.
+            //TODO - Add server side validation
+            var vehicle = new Vehicle {
+                Make = (Make)Enum.Parse(typeof(Make), item.Make, true),
+                Model = item.Model,
+                Year = item.Year,
+                RetailPrice = item.RetailPrice
+            };
+
+            //Parse Features
+            var newItem = new InventoryItem {
+                Vehicle = vehicle
+            };
+
+            //Assign unique stock number...
+            newItem.StockNumber = StockNumberGenerator.GenerateStockNumber();
+            
+            InventoryRepository.List.Add(newItem);
+
             return Ok();
         }
-
-
-        //TODO - Add Post, business logic must be enforced server side as well.
-        //TODO - Add server side validation
     }
 }

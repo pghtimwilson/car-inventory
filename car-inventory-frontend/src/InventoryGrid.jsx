@@ -38,10 +38,6 @@ export default function InventoryGrid() {
                         inventory.splice(foundIndex, 1);
                     }
 
-                    console.log('inventory after delete', inventory);
-
-                    //setNotifier(!notifier);
-
                     var requestHeaders = new Headers();
                     requestHeaders.append('Accept', 'application/json');
                     requestHeaders.append('Content-Type', 'application/json');

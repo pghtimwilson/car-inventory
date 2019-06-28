@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using car_inventory_backend.Services;
 
 namespace car_inventory_backend.Data
 {
@@ -16,11 +17,14 @@ namespace car_inventory_backend.Data
 
         private IFeatureRepository FeatureRepository;
 
-        public InventoryGenerator(IVehicleRepository vehicleRepository, IFeatureRepository featureRepository)
+        private IStockNumberGenerator StockNumberGenerator;
+
+        public InventoryGenerator(IVehicleRepository vehicleRepository, IFeatureRepository featureRepository, IStockNumberGenerator stockNumberGenerator)
         {
             randomValue = new Random();
             VehicleRepository = vehicleRepository;
             FeatureRepository = featureRepository;
+            StockNumberGenerator = stockNumberGenerator;
         }
 
         public List<InventoryItem> Generate(int seedCount = 10)
@@ -45,6 +49,7 @@ namespace car_inventory_backend.Data
 
             var randomVehicle = VehicleRepository.List[vehicleRandomIndex];
             var item = new InventoryItem();
+            item.StockNumber = StockNumberGenerator.GenerateStockNumber();
             item.Id = x.ToString(); 
             item.Vehicle = randomVehicle;
 
