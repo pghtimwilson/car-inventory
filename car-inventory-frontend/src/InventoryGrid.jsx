@@ -29,6 +29,7 @@ export default function InventoryGrid() {
                 callback: () => {
                     var foundIndex = -1;
                     for(var i = 0; i < inventory.length; i++){
+                        // eslint-disable-next-line
                         if(inventory[i].id == row.id){
                             foundIndex = i;
                         }
@@ -59,7 +60,7 @@ export default function InventoryGrid() {
 
     return (
         <div>
-            <InventoryForm></InventoryForm>
+            <InventoryForm notifier={notifier} setNotifier={setNotifier} />
             <TotalPotentialProfit notifier={notifier} />
             <TotalSellingPrice notifier={notifier} />
             <br/>

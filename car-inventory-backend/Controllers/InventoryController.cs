@@ -17,10 +17,13 @@ namespace car_inventory_backend.Data
 
         private IStockNumberGenerator StockNumberGenerator;
 
-        public InventoryController(IInventoryRepository inventoryRepository, IStockNumberGenerator stockNumberGenerator)
+        private IFeatureRepository FeatureRepository;
+
+        public InventoryController(IInventoryRepository inventoryRepository, IStockNumberGenerator stockNumberGenerator, IFeatureRepository featureRepository)
         {
             InventoryRepository = inventoryRepository;
             StockNumberGenerator = stockNumberGenerator;
+            FeatureRepository = featureRepository;
         }
 
         // GET api/inventory
@@ -58,7 +61,7 @@ namespace car_inventory_backend.Data
         }
 
         [HttpPost]
-        public IActionResult Post(InventoryItemDto item){
+        public IActionResult Post(InventoryItemRPC item){
             //Quantity in stock
             
             //It isn't enough to only do validation client side, for data integrity it must be done server side as well.
@@ -68,18 +71,59 @@ namespace car_inventory_backend.Data
                 Make = (Make)Enum.Parse(typeof(Make), item.Make, true),
                 Model = item.Model,
                 Year = item.Year,
-                RetailPrice = item.RetailPrice
+                VehicleType = (VehicleType)Enum.Parse(typeof(VehicleType), item.Type, true),
+                RetailPrice = item.RetailPrice,
             };
 
             //Parse Features
-            var newItem = new InventoryItem {
-                Vehicle = vehicle
+            var features = new List<Feature>();
+            if (!string.IsNullOrEmpty(item.Fuel))
+            {
+                var fuel = FeatureRepository.List.FirstOrDefault(feature => feature.Type == FeatureType.Fuel && feature.Description.Equals(item.Fuel, StringComparison.InvariantCultureIgnoreCase));
+                if(fuel != null)
+                {
+                    features.Add(fuel);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(item.Doors))
+            {
+                var doors = FeatureRepository.List.FirstOrDefault(feature => feature.Type == FeatureType.Doors && feature.Description.Equals(item.Doors, StringComparison.InvariantCultureIgnoreCase));
+                if (doors != null)
+                {
+                    features.Add(doors);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(item.Interior))
+            {
+                var interior = FeatureRepository.List.FirstOrDefault(feature => feature.Type == FeatureType.Interior && feature.Description.Equals(item.Interior, StringComparison.InvariantCultureIgnoreCase));
+                if (interior != null)
+                {
+                    features.Add(interior);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(item.Transmission))
+            {
+               var transmission = FeatureRepository.List.FirstOrDefault(feature => feature.Type == FeatureType.Transmission && feature.Description.Equals(item.Transmission, StringComparison.InvariantCultureIgnoreCase));
+                if (transmission != null)
+                {
+                    features.Add(transmission);
+                }
+            }
+
+            var newItem = new InventoryItem
+            {
+                Markup = item.Markup,
+                Vehicle = vehicle,
+                Features = features
             };
 
             //Assign unique stock number...
             newItem.StockNumber = StockNumberGenerator.GenerateStockNumber();
             
-            InventoryRepository.List.Add(newItem);
+            InventoryRepository.AddItem(newItem);
 
             return Ok();
         }

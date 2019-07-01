@@ -4,6 +4,8 @@ export function useInventory(notifier) {
     const [inventory, setInventory] = React.useState([]);
 
     React.useEffect(() => {
+        console.log('updating');
+
         var requestHeaders = new Headers();
         requestHeaders.append('Accept', 'application/json');
         requestHeaders.append('Content-Type', 'application/json');

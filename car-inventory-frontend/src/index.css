@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.inventory-form {
+display: flex;
+justify-content: left;
+}
+
+.inventory-form .sub-form {
+  display: flex;
+  justify-content: left;
+}
+
+.inventory-form .sub-form .div {
+  justify-content: left;
+}
+
+.inventory-form .sub-form .container {
+  justify-content: left;
+}
+
+div.data {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  padding-bottom: 10px;
+  width: 450px;
+}
+
+.error {
+  color: red
+}
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.required {
+  color: red;
+}

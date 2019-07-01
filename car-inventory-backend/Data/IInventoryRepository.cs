@@ -7,6 +7,8 @@ namespace car_inventory_backend.Data
         IList<InventoryItem> List {get;}
 
         void Delete(string Id);
+
+        void AddItem(InventoryItem item);
     }
 
     public class InventoryRepository : IInventoryRepository {
@@ -21,6 +23,12 @@ namespace car_inventory_backend.Data
             get {
                 return InventoryItems.OrderBy(i => i.Vehicle.Make).OrderBy(i => i.Vehicle.Model).ToList();
             }
+        }
+
+        public void AddItem(InventoryItem item)
+        {
+            item.Id = (InventoryItems.Count() + 1).ToString();
+            InventoryItems.Add(item);
         }
 
         public void Delete(string Id)
