@@ -1,7 +1,5 @@
 {
-  "ProjectFilePath": "c:\\Code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj",
-  "TargetFramework": "netcoreapp2.1",
-  "TagHelpers": [],
+  "FilePath": "d:\\code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -10,5 +8,11 @@
         "ExtensionName": "MVC-2.1"
       }
     ]
-  }
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "car-inventory-backend",
+  "Documents": []
 }

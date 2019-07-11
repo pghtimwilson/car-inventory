@@ -2606,7 +2606,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
         },
         "compile": {
@@ -2620,7 +2619,7 @@
   },
   "libraries": {
     "Castle.Core/4.4.0": {
-      "sha512": "b5rRL5zeaau1y/5hIbI+6mGw3cwun16YjkHZnV9RRT5UyUIFsgLmNXJ0YnIN9p8Hw7K7AbG1q1UclQVU3DinAQ==",
+      "sha512": "dibDR/ggOLwpsLKuOZk3BHrq0mDthf+MEH02rb6QHXKb5ZzYml+Y70XaLRiDyDdLbyhsgcBEpaK2mrS13enOmA==",
       "type": "package",
       "path": "castle.core/4.4.0",
       "files": [
@@ -2740,7 +2739,7 @@
       ]
     },
     "Microsoft.CodeCoverage/15.8.0": {
-      "sha512": "2hwgoDq1ipHizvgBJG3SBhOnAQlq8eeyk19o2ywauP11+5DjkmDTNUjYglQsHgKKOkvPvCOAaFflQlLbkQnz3Q==",
+      "sha512": "cgcX2c/K35GrIjXkUwWop2GyG/YsLVo2wnL/2ESzOqr4V21FrrCVYuhpClv/bD80+rwXyIpyulqSX1NBNeAtMA==",
       "type": "package",
       "path": "microsoft.codecoverage/15.8.0",
       "files": [
@@ -2848,7 +2847,7 @@
       ]
     },
     "Microsoft.NET.Test.Sdk/15.8.0": {
-      "sha512": "u7DjH/b1je0sGyYVH+MDMzwVTBRod34mDhkHFAZfVWkRleH9WZLP9FE+1QAU2FBIF5pIJzzRxAs1yDVrof+WGw==",
+      "sha512": "Lz0K5fpv2uFU3GtZuSDIq0aGFPxiPD47raYDBfS1XXFbo+SbK2ZRurnmaFStE8hBrW9nXt3EqTUcyErUluYOvQ==",
       "type": "package",
       "path": "microsoft.net.test.sdk/15.8.0",
       "files": [
@@ -3207,7 +3206,7 @@
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/15.8.0": {
-      "sha512": "u6qrZi8pXZrPl+vAJBn/yIaPEsl/NglcLD9FD/fh1OmBaFMcp/dp/5daTB7Fo89iDgktZa6PoACq86tZs0DYXA==",
+      "sha512": "+tYt5UdC30qIw+0G36F1hYId782nNVM5JFaGq1LB9nSpW8NMLgZQ0B5G5huywGfD0o22LWEmoadPO+ClcTfIMw==",
       "type": "package",
       "path": "microsoft.testplatform.objectmodel/15.8.0",
       "files": [
@@ -3279,7 +3278,7 @@
       ]
     },
     "Microsoft.TestPlatform.TestHost/15.8.0": {
-      "sha512": "YCbFo2qKhbRn/6h3+pfA8bDJtxg0BpwwBqVMM+KRJTq1zqH9zOTeQuSaNe0DDaxzc0mmD9a4Wn4qG1yuNHDMBA==",
+      "sha512": "sjtjYSZnMvJG2Bhgq6rN4zTY+YEcKymIK4ADNhgWGmKhuDDfYRl7ynWCiQmvoAR27q4ABDYKMJ4oDQbaQRTzYg==",
       "type": "package",
       "path": "microsoft.testplatform.testhost/15.8.0",
       "files": [
@@ -3425,7 +3424,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.9": {
-      "sha512": "fnArZMBAlGUxuVIffEYoi+IsUR+rTQ/Mz+pIHyOnf5AHBJ5Jp1LvWQmyoWcs5k+Q0xXOhTNiJTvvwdw84H5rZA==",
+      "sha512": "elJCdByo45aWfolyQR7baWvzecS0ES/uK4umD3Uj/U7ro1PxLBBXkZqlI/eIi5iW9nptqKqHYZq8EpT1EpYjXA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration/2.1.9",
       "files": [
@@ -3438,7 +3437,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.9": {
-      "sha512": "rLQcbV5lbWi1pSTnPk5FAKW9AVi7VP3WVXj5vrzI8M1PlnAXn2LipA3biumlDcDOwCHrLth61I5JnRiqgFi+nA==",
+      "sha512": "kRb569TcU9yyjxYBRFRjdiGz76IbwKjGZawBe4sSXwL+QAPsLjvk24vIX3ADTvbiseDF8lUmoJIn7aphhu66YQ==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.9",
       "files": [
@@ -3451,7 +3450,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.9": {
-      "sha512": "zL3c+GzGhyN9ycpL/uBEcYe+mvNGyVFIOXwdzROVgOLt6j6ceFvSL38Vdq/ISUz6OFdkBPdIo71Qct8M9Z1QNg==",
+      "sha512": "RxrislCEjYQOXstEV182uFAsdWvTYVwtyxa7CPYWyCHPkyr4VihLJ+Gj3FjO5Ng9hJ09Eld91q3ltCNg8LDYdg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.core/2.1.9",
       "files": [
@@ -3464,7 +3463,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.9": {
-      "sha512": "hoMP2Sr2AZF00niWLXXjHM8275c7e11f0P7PlRS3j/ETG6wizByADxRF2Q2Yb/PUhg/hXRwfj4u3vS/sxcqJJw==",
+      "sha512": "rjYFcVp+7YnWSnw7+ppyTrO4lraCZe38Aa0dEuIYY9yyFe7sS6QdaP6N7oHxyIF0vmGwTLFozq9WTA9+lFlaNg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.1.9",
       "files": [
@@ -3487,7 +3486,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.9": {
-      "sha512": "P9qpgTmOHb7odcAo/EqbaofUlaM8JcYu9d5wewX5ZbJMn5GcbnjDQhg5LF7DoKkcpLBCUiXG04F7lqBcsZqtUA==",
+      "sha512": "PcTJk9b2sNEiq4v+tA6L0gU3S1bQmwdmrxnaVeLFVOkF67R6euJ7yxjQldXY58DL4EE3Urhu0qkmydJfSUtsmg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.9",
       "files": [
@@ -3501,7 +3500,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.9": {
-      "sha512": "Vuw0yVKRfj/3/jcFdvJEULf+fu2VoeA/loEyX5wfj2EzFc+lpEQ+6vIvvKCc6gtjh/O3MsZZxtFGFcWcDrNK/g==",
+      "sha512": "3DfUVQHhuunNfKZfNa6LWTQl0iDEZpSNZ//zDBUqNY6yLZdCBxh/yCtmlOFSTp0aHvV6EKaih5rUsim2u/TCCA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.9",
       "files": [
@@ -3514,7 +3513,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.9": {
-      "sha512": "HGtpCMW7GEPygFaNjzE/zPt5zP9e7u8galmYQoR3taGL+2JRFDx9P5xd2jsRxlQUdNB0GVf/0OHxjeLJJYWJBw==",
+      "sha512": "D515l+lXVv4rmtjGvlxsoGzsANkF0ctQh5Qc2LrlbeJeXaMyufQQJp7foZyDpV4PJ7JfDxq0/3n1hg4k2QJTGA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.9",
       "files": [
@@ -3527,7 +3526,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.9": {
-      "sha512": "bmqEQaGpXME9ErK6N+Ew3g7hia2t5tJeARZYrD6T21TT/2+OIwDrVuI3cu9RpeoLWXJa76eqcyC7tC+SYGfIZA==",
+      "sha512": "ZXSl0bvFywsQYNAo1qreqDxETyBqMdIzRfP2RCxoJR2pHbDi/8Rid1MlcuiMCTQmJi+wANI5UgXHAC76hrZzFQ==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.9",
       "files": [
@@ -3754,7 +3753,7 @@
       ]
     },
     "Moq/4.12.0": {
-      "sha512": "ZppsWLXxVNhOKQIBUejZ2VVmo345WB0YJ6AMA1VuMNplZLTD8mtTxH2bAzQ38aowXpaqPiYt+nhkGroIFFxX9A==",
+      "sha512": "52OnOpSKKlXfi+ukMOeRJ1Md1bOeloP7L7HkzvWtjkfRBkWmpo3vBGWX4P1wPVJEfgrDTeXCvq8S1vLasXdFJA==",
       "type": "package",
       "path": "moq/4.12.0",
       "files": [
@@ -4146,7 +4145,7 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
+      "sha512": "/p8IQT2brFMDa7BHMH71LV+w5Tb3OxoLHxhn6+MGqN5xeqhM2HRHmj+7xQGJnaRn73d7ZTvp6yRCFMvolws4wA==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -4172,7 +4171,7 @@
       ]
     },
     "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
+      "sha512": "JGc0pAWRE8lB4Ucygk2pYSKbUPLlAIq6Bczf5/WF2D/VKJEPtYlVUMxk8fbl1zRfTWzSHi+VcFZlaPlWiNxeKg==",
       "type": "package",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -4467,7 +4466,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -4633,7 +4632,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -8250,23 +8249,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TIMOT\\.nuget\\packages\\": {},
+    "C:\\Users\\Tim.Wilson\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\car-inventory\\car-inventory-tests\\car-inventory-tests.csproj",
+      "projectUniqueName": "d:\\code\\car-inventory\\car-inventory-tests\\car-inventory-tests.csproj",
       "projectName": "car-inventory-tests",
-      "projectPath": "C:\\Code\\car-inventory\\car-inventory-tests\\car-inventory-tests.csproj",
-      "packagesPath": "C:\\Users\\TIMOT\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\car-inventory\\car-inventory-tests\\obj\\",
+      "projectPath": "d:\\code\\car-inventory\\car-inventory-tests\\car-inventory-tests.csproj",
+      "packagesPath": "C:\\Users\\Tim.Wilson\\.nuget\\packages\\",
+      "outputPath": "d:\\code\\car-inventory\\car-inventory-tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\TIMOT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tim.Wilson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8274,13 +8273,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
+        "https://nuget.bentley.com/nuget/Default": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj": {
-              "projectPath": "C:\\Code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj"
+            "d:\\code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj": {
+              "projectPath": "d:\\code\\car-inventory\\car-inventory-backend\\car-inventory-backend.csproj"
             }
           }
         }
@@ -8299,6 +8302,7 @@
             "version": "[15.8.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

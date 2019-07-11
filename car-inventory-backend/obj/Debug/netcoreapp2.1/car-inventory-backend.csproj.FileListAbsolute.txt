@@ -12,3 +12,17 @@ C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventor
 C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.dll
 C:\Code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.pdb
 C:\Code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.pdb
+d:\code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.deps.json
+d:\code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.runtimeconfig.json
+d:\code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.runtimeconfig.dev.json
+d:\code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.dll
+d:\code\car-inventory\car-inventory-backend\bin\Debug\netcoreapp2.1\car-inventory-backend.pdb
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.csprojAssemblyReference.cache
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.csproj.CoreCompileInputs.cache
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.RazorAssemblyInfo.cache
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.RazorAssemblyInfo.cs
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.AssemblyInfoInputs.cache
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.AssemblyInfo.cs
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.RazorTargetAssemblyInfo.cache
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.dll
+d:\code\car-inventory\car-inventory-backend\obj\Debug\netcoreapp2.1\car-inventory-backend.pdb
